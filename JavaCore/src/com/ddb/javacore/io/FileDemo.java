@@ -7,8 +7,8 @@ import java.io.PrintStream;
 public class FileDemo {
 
 	public static void main (String[] args) throws IOException {
-		File f = new File("D:\\fileDemo\\Test\\Test.txt");//现在还没有
-		//File f = new File("D:\\fileDemo");//现在还没有
+		File f = new File("D:\\fileDemo\\Test\\Test.txt");//鐜板湪杩樻病鏈�
+		//File f = new File("D:\\fileDemo");//鐜板湪杩樻病鏈�
 		File f2 = new File("D:\\wamp\\bin\\mysql\\mysql5.6.17");
 		File f3 = new File("D:\\wamp\\bin\\mysql\\mysql5.6.17\\my.ini");
 		File f4 = new File("D:\\wamp\\bin\\mysql\\mysql5.6.17\\hide.txt");
@@ -101,6 +101,8 @@ public class FileDemo {
 		out.println("f3.getName() : " + f3.getName());
 		
 		out.println("f5.createNewFile() : " + f5.createNewFile());
+		
+		
 		File parentPath = f.getParentFile();
 		
 		if (!parentPath.exists()) {
